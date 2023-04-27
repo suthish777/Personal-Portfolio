@@ -23,7 +23,7 @@ header {
   background-color: #fff;
 }
 
-.logo > a{
+.logo > a {
   text-decoration: none;
   color: inherit;
 }
@@ -245,5 +245,4 @@ button[disabled] {
   line-height: 20px;
   color: #253858;
 }
-
 /* About Section Ends */
