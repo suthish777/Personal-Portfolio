@@ -245,3 +245,85 @@ button[disabled] {
   line-height: 20px;
   color: #253858;
 }
+
+/* About Section Ends */
+
+/* Contact Me starts here */
+.contact-me-form-container {
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  position: absolute;
+  margin: 6em 0 0 0;
+  left: 0%;
+  padding: 3em;
+  padding: 5em 7% 0 7%;
+  border-radius: 6em 0 0 0;
+  background-color: #6070ff;
+  background-image: url(./assets/contact\ form\ shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 95%;
+}
+
+.contact-me-form-heading {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+}
+
+.contact-me-form-paragraph {
+  cursor: default;
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.contact-me-form {
+  flex-direction: column;
+  margin-top: 0.75em;
+}
+
+.contact-me-form > input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #f7f7f9;
+  box-shadow: 0 0 2px #f7f7f9;
+}
+
+.contact-me-form-text-input {
+  margin-top: 0.75em;
+  padding: 0.75em;
+  border-radius: 0.75em;
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.contact-me-form-button {
+  align-self: flex-start;
+}
+
+.home-bar {
+  display: flex;
+  border-radius: 10px;
+  left: 120px;
+  position: absolute;
+  height: 5px;
+  bottom: 8px;
+}
+
+/* Contact me ends here */
+
