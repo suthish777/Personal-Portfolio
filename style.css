@@ -13,10 +13,18 @@ html {
 ul {
   list-style: none;
 }
+ a {
+  text-decoration: none;
+  color: inherit;
+ }
 
 body {
   position: relative;
   background-color: #f7f7f9;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .heading-large {
@@ -41,9 +49,47 @@ header {
   left: 76px;
 }
 
+.logo {
+  animation-name: logo-animation;
+  animation-duration: 0.5s;
+}
+
+.mobile-menu-close-icon {
+  color: #fff;
+  align-self: flex-end;
+  padding: 0;
+}
+
+.mobile-menu--hide {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.mobile-menu--show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em 0.75em;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: rgba(96, 112, 255, 0.9);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 44px;
+  backdrop-filter: blur(4px);
+}
+
+.mobile-menu--show > ul > li {
+  padding: 0.5em 0;
+}
+
 .nav-menu-button {
-  margin-right: 24px;
-  margin-left: auto;
+  display: inline;
   cursor: pointer;
 }
 
@@ -495,9 +541,8 @@ textarea:focus {
   .contact-me-form-button {
     margin: 1em auto;
   }
-
-  /* About Section Ends Here */
 }
+/* About Section Ends Here */
 
 /* Detail Section Starts Here */
 .detail-card {
