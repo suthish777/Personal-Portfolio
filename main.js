@@ -1,16 +1,16 @@
-let showNav = document.getElementById('show-nav-btn');
-let hideNav = document.getElementById('hide-nav-btn');
-let mobileMenuLinks = document.getElementById('mobile-menu-links');
-let mobileMenu = document.getElementById('mobile-menu');
+const showNav = document.getElementById('show-nav-btn');
+const hideNav = document.getElementById('hide-nav-btn');
+const mobileMenuLinks = document.getElementById('mobile-menu-links');
+const mobileMenu = document.getElementById('mobile-menu');
 
 showNav.addEventListener('click', () => {
-  mobileMenu.classList.toggle('mobile-menu--show');
+  mobileMenu.className('mobile-menu--show');
 });
 
 hideNav.addEventListener('click', () => {
-  mobileMenu.classList.toggle('mobile-menu--show');
+  mobileMenu.className('mobile-menu--show');
 });
 
 mobileMenuLinks.addEventListener('click', () => {
-  mobileMenu.classList.toggle('mobile-menu--shaw');
+  mobileMenu.className('mobile-menu--shaw');
 });
