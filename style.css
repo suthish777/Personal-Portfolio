@@ -322,9 +322,8 @@ button[disabled] {
   background-repeat: no-repeat;
   background-position-x: right;
 }
-/* About Section Ends */
+/*contactme section starts*/
 
-/* Contact Me starts here */
 .contact-me-form-container {
   justify-content: center;
   flex-direction: column;
