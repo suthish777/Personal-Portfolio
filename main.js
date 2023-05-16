@@ -4,13 +4,13 @@ const mobileMenuLinks = document.getElementById('mobile-menu-links');
 const mobileMenu = document.getElementById('mobile-menu');
 
 showNav.addEventListener('click', () => {
-  mobileMenu.className('mobile-menu--show');
+  mobileMenu.classList.toggle('mobile-menu--show');
 });
 
 hideNav.addEventListener('click', () => {
-  mobileMenu.className('mobile-menu--show');
+  mobileMenu.classList.toggle('mobile-menu--show');
 });
 
 mobileMenuLinks.addEventListener('click', () => {
-  mobileMenu.className('mobile-menu--shaw');
+  mobileMenu.classList.toggle('mobile-menu--show');
 });
