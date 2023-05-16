@@ -90,8 +90,8 @@ header {
   font-size: 2rem;
   line-height: 44px;
   backdrop-filter: blur(4px);
-  position: fixed;
   z-index: 15;
+  position: fixed;
 }
 
 .mobile-menu--show > ul > li {
