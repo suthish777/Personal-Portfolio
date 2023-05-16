@@ -23,7 +23,7 @@ const projects = [{
   projectLang: ['HTML', 'CSS', 'JavaScript'],
   projectDetails: { orgnization: 'CANOPY', type: 'Back END Dev', year: 2015 },
   seeLive: 'https://suthish777.github.io/Personal-portfolio/',
-  seeSource: 'https://github.com/suthish777/Personal-porfolio.git',
+  seeSource: 'git@github.com:suthish777/Personal-portfolio.git',
 }, {
   featureImg: './assets/Snapshoot Portfolio (3).png',
   projectName: 'Multi-Post Stories',
@@ -31,7 +31,7 @@ const projects = [{
   projectLang: ['HTML', 'CSS', 'Ruby', 'JavaScript'],
   projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2016 },
   seeLive: 'https://suthish777.github.io/Personal-portfolio/',
-  seeSource: 'https://github.com/suthish777/Personal-porfolio.git',
+  seeSource: 'git@github.com:suthish777/Personal-portfolio.git',
 }, {
   featureImg: './assets/Snapshoot Portfolio (2).png',
   projectName: 'Facebook 360',
@@ -39,7 +39,7 @@ const projects = [{
   projectLang: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
   projectDetails: { orgnization: 'FACEBOOK', type: 'Full Stack Dev', year: 2017 },
   seeLive: 'https://suthish777.github.io/Personal-portfolio/',
-  seeSource: 'https://github.com/suthish777/Personal-porfolio.git',
+  seeSource: 'git@github.com:suthish777/Personal-portfolio.git',
 }, {
   featureImg: './assets/Snapshoot Portfolio.png',
   projectName: 'Uber Navigation',
@@ -47,7 +47,7 @@ const projects = [{
   projectLang: ['HTML', 'Ruby', 'CSS', 'JavaScript'],
   projectDetails: { orgnization: 'UBER', type: 'Front End Dev', year: 2017 },
   seeLive: 'https://suthish777.github.io/Personal-portfolio/',
-  seeSource: 'https://github.com/suthish777/Personal-porfolio.git',
+  seeSource: 'git@github.com:suthish777/Personal-portfolio.git',
 }];
 
 projects.forEach((project, index) => {
