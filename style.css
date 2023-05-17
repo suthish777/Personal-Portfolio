@@ -90,7 +90,6 @@ header {
   font-size: 2rem;
   line-height: 44px;
   backdrop-filter: blur(4px);
-  position: fixed;
   z-index: 15;
 }
 
@@ -605,6 +604,30 @@ textarea:focus {
 
   .contact-me-form-button {
     margin: 1em auto;
+  }
+
+  .contact-me-form-error-msg-hidden {
+    display: none;
+  }
+
+  .contact-me-form-error-msg-display {
+    display: inline;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 0.5em;
+    animation-name: error;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes error {
+    from {
+      color: #fff;
+    }
+
+    to {
+      color: #000;
+    }
   }
 
   /* About Section Ends Here */
