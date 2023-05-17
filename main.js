@@ -192,5 +192,3 @@ contactForm.addEventListener('submit', function(event) {
     contactForm.submit();
   }
 });
-
-// Contact Form Validation Ends Here
