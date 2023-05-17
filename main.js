@@ -168,3 +168,7 @@ detailCardClose4.addEventListener('click', () => {
 });
 // Card 4 popup opening closing ends Here
 // Adding Dynamic Data to Works ul ends Here
+
+// Contact Form Validation Starts Here
+// This Function will show error message
+const contactForm = document.getElementById('contact-me-form');
