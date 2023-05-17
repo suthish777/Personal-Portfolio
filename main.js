@@ -172,3 +172,7 @@ detailCardClose4.addEventListener('click', () => {
 // Contact Form Validation Starts Here
 // This Function will show error message
 const contactForm = document.getElementById('contact-me-form');
+const contactForm = document.getElementById('contact-me-form');
+const contactFormError = document.getElementById('contact-me-form-error-msg');
+const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+
