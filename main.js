@@ -168,3 +168,6 @@ detailCardClose4.addEventListener('click', () => {
 });
 // Card 4 popup opening closing ends Here
 // Adding Dynamic Data to Works ul ends Here
+const contactForm = document.getElementById('contact-me-form');
+const contactFormError = document.getElementById('contact-me-form-error-msg');
+const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
