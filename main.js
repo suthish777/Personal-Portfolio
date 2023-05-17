@@ -175,8 +175,8 @@ const contactForm = document.getElementById('contact-me-form');
 const contactFormError = document.getElementById('contact-me-form-error-msg');
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-contactForm.addEventListener('submit', function(event) {
-  event.preventDefault(); 
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
 
   const emailInput = document.getElementById('contact-me-form');
   const email = emailInput.value.trim();
