@@ -168,3 +168,27 @@ detailCardClose4.addEventListener('click', () => {
 });
 // Card 4 popup opening closing ends Here
 // Adding Dynamic Data to Works ul ends Here
+
+// Contact Form Validation Starts Here
+// This Function will show error message
+const contactForm = document.getElementById('contact-me-form');
+const contactFormError = document.getElementById('contact-me-form-error-msg');
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const emailInput = document.getElementById('contact-me-form');
+  const email = emailInput.value.trim();
+
+  if (!emailRegex.test(email)) {
+    contactFormError.textContent = 'Invalid email address';
+    contactFormError.style.display = 'block';
+  } else if (email !== email.toLowerCase()) {
+    contactFormError.textContent = 'Email should be in lowercase';
+    contactFormError.style.display = 'block';
+  } else {
+    contactFormError.style.display = 'none';
+    contactForm.submit();
+  }
+});
