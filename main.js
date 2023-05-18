@@ -190,7 +190,7 @@ contactForm.addEventListener('submit', (event) => {
   } else {
     contactFormError.innerText = '';
     contactFormError.className = 'contact-me-form-error-msg-hidden';
-     contactForm.submit();
+    contactForm.submit();
   }
 });
 
