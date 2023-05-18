@@ -338,7 +338,7 @@ button[disabled] {
   padding: 3em;
   border-radius: 5em 0 0 0;
   background-color: #6070ff;
-  background-image: url(./assets/contact_form_shapes_mobile.png);
+  background-image: url(./assets/contact\ form\ shapes-mobile.png);
   background-repeat: no-repeat;
   background-position-x: right;
 }
@@ -521,7 +521,7 @@ textarea:focus {
 
   .headline-main {
     margin-top: 5em;
-    background-image: url(./assets/headline-background-desktop.png);
+    background-image: url(./assets/Header\ bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -592,7 +592,7 @@ textarea:focus {
   .contact-me-form-container {
     align-content: center;
     padding: 10% 25%;
-    background-image: url(./assets/contact-form-shapes-desktop.png);
+    background-image: url(./assets/contact\ form\ background\ shapes.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -678,3 +678,5 @@ textarea:focus {
   transition: transform 2s;
   transform: translate(20px);
 }
+
+/* Animations and Transitions Ends Here */
