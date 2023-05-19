@@ -173,22 +173,49 @@ detailCardClose4.addEventListener('click', () => {
 // This Function will show error message
 const contactForm = document.getElementById('contact-me-form');
 const contactFormError = document.getElementById('contact-me-form-error-msg');
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
 
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const emailInput = document.getElementById('contact-me-form');
-  const email = emailInput.value.trim();
-
-  if (!emailRegex.test(email)) {
-    contactFormError.textContent = 'Invalid email address';
-    contactFormError.style.display = 'block';
-  } else if (email !== email.toLowerCase()) {
-    contactFormError.textContent = 'Email should be in lowercase';
-    contactFormError.style.display = 'block';
+  if (contactForm.elements.name.value.trim() === '') {
+    contactFormError.innerText = 'Please enter your name';
+    contactFormError.classList.add('contact-me-form-error-msg-display');
+  } else if (!emailRegex.test(contactForm.elements.email.value.trim())) {
+    contactFormError.innerText = 'Please enter your email in lower case';
+    contactFormError.classList.add('contact-me-form-error-msg-display');
+  } else if (contactForm.elements.message.value.trim() === '') {
+    contactFormError.innerText = 'Please enter your message';
+    contactFormError.classList.add('contact-me-form-error-msg-display');
   } else {
-    contactFormError.style.display = 'none';
+    contactFormError.innerText = '';
+    contactFormError.className = 'contact-me-form-error-msg-hidden';
     contactForm.submit();
   }
 });
+
+// Contact Form Validation Ends Here
+
+// LocalStorage Starts Here
+
+let contactFormData = JSON.parse(window.localStorage.getItem('contactFormData'));
+if (!contactFormData) {
+  contactFormData = {
+    name: '',
+    email: '',
+    message: '',
+  };
+}
+// This function populates data intp inputs that we got from localStorage
+const keys = Object.keys(contactFormData);
+for (let i = 0; i < keys.length; i += 1) {
+  contactForm.elements[keys[i]].value = contactFormData[keys[i]];
+}
+// This function updates data in localStorage when user add data in contact form
+for (let i = 0; i < contactForm.length; i += 1) {
+  contactForm.elements[i].addEventListener('change', (e) => {
+    contactFormData[`${contactForm.elements[i].name}`] = e.target.value;
+    window.localStorage.setItem('contactFormData', JSON.stringify(contactFormData));
+  });
+}
+// LocalStorage Ends Here

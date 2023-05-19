@@ -626,7 +626,7 @@ textarea:focus {
     }
 
     to {
-      color: #000;
+      color: red;
     }
   }
 
